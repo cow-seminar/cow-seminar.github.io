@@ -344,6 +344,9 @@ def page(cfg, title, main_html, side_html, prefix=""):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="icon" href="{prefix}assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="{prefix}assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="{prefix}assets/apple-touch-icon.png">
 <link rel="stylesheet" href="{prefix}style.css">
 <link rel="alternate" type="text/calendar" href="{prefix}calendar.ics" title="Seminar calendar">
 <script>
@@ -462,6 +465,8 @@ def main():
 
     (OUT / "calendar.ics").write_text(build_ics(cfg, talks), encoding="utf-8", newline="")
     shutil.copy(ROOT / "style.css", OUT / "style.css")
+    shutil.copytree(ROOT / "assets", OUT / "assets")
+    shutil.copy(ROOT / "assets" / "favicon-32.png", OUT / "favicon.ico")  # for browsers that ask /favicon.ico
     if SLIDES_DIR.exists():
         shutil.copytree(SLIDES_DIR, OUT / "slides")
     (OUT / ".nojekyll").write_text("")
