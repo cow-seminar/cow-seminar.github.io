@@ -1,0 +1,182 @@
+# ============================================================
+#  ДОКЛАДЫ СЕМИНАРА
+#  Порядок записей не важен: сайт сам сортирует их по дате и
+#  сам переносит доклад из «Upcoming» в «Past» после его начала.
+#
+#  Поля (обязательны только date и speaker):
+#    date:        2026-10-13
+#    time:        "16:00"        # если не указано — время из config.yml
+#    speaker:     Имя Фамилия
+#    speaker_url: https://...    # страница докладчика
+#    title:       Название
+#    video:       https://youtu.be/...
+#    slides:      20261013kosoy.pdf   # обычно НЕ НУЖНО: файл из папки slides/,
+#                                     # имя которого начинается с даты 20261013,
+#                                     # находится автоматически
+#    note:        The talk was not recorded at the speaker's request.
+#    abstract: |
+#      Текст аннотации. Формулы в $...$ работают.
+#
+#      Пустая строка = новый абзац.
+# ============================================================
+
+# ---------- 2026: предстоящие ----------
+
+- date: 2026-10-13
+  speaker: Vanessa Kosoy
+  speaker_url: https://coral-research.org/vanessa-kosoy/
+  title: Stringological sequence prediction
+  abstract: |
+    This talk is about a newly discovered connection between combinatorics on words and the sequence prediction problem in machine learning. The sequence prediction problem asks to provide an algorithm which, given the prefix of a word, guesses the next symbol in some “intelligent” way. The natural interpretation of “intelligent” is to require that on “simple” words – i.e. words that have simple patterns – the algorithm makes few mistakes. Formally, it means that we specify a “complexity measure” which is a function from words to numbers, and require a bound on the number of mistakes in terms of the complexity. We also want the algorithm to be fast and use little space on words of low complexity (because such words should be compressible). In this talk, I will formalize these requirements and show that it is possible to meet them for several natural complexity measures coming from combinatorics on words, for which natural classes of sequences have slowly growing complexity. Two examples of such measures are left-to-right and right-to-left k-automaticity, so the corresponding prediction algorithms work well on k-automatic sequences. Another example is the size of the smallest straight-line program for a word, leading to an algorithm that works well for morphic and Sturmian sequences. Additional examples are complexity measures that were invented for this line of research, related to the “mix-automatic” sequences of Endrullis et al. Many open problems remain, both on the algorithms side and the combinatorics side.
+
+- date: 2026-10-27
+  speaker: Michael Coons
+  speaker_url: https://mcoons-math.github.io/
+  title: Correlations of the Thue-Morse Sequence
+  abstract: |
+    We revisit the pair correlations of the Thue–Morse sequence with focus on asymptotic results on various means. In the first part of the talk, we will show that all higher-order correlations of the Thue–Morse sequence with general real weights are effectively determined by a single value of the balanced $2$-point correlation. As a consequence, we get that all odd-order correlations of the balanced Thue–Morse sequence vanish, and that, for any even $n$, the $n$-point correlations of the balanced Thue–Morse sequence have mean value zero, as do their absolute values, raised to an arbitrary positive power. We will then show how the correlations of the Thue–Morse sequence with general real weights can be derived from the balanced $2$-point correlations. In the second/last part of the talk, we will focus on understanding the growth of the sum of the absolute values of the autocorrelations. This is joint work with Michael Baake, Jan Mazac, Ari Pincus-Kazmar and Adam Stout.
+
+- date: 2026-11-10
+  speaker: Jason Bell
+  speaker_url: https://math.uwaterloo.ca/~jpbell/
+
+- date: 2026-11-24
+  speaker: Thierry de la Rue
+  speaker_url: https://delarue.perso.math.cnrs.fr/
+  title: Frequency of patterns in smooth sequences over the alphabet $\{1,3\}$
+  abstract: |
+    The famous Oldenburger-Kolakoski sequence is an example of a smooth sequence over $\{1,2\}$, that is a sequence on which we can iterate the run-length encoding operation while sticking to the same alphabet. The very existence of the frequency of “$1$”s in this sequence has been the subject of an open question for decades.
+
+    In this talk, based on a joint work with Damien Jamet, Irène Marcovici and Léo Poirier, I will show that smooth sequences over the alphabet $\{1,3\}$ are much easier to analyze. Indeed these sequences hide a substitutive structure that we use to demonstrate the following result: The subshift of smooth sequences over $\{1,3\}$ is partitioned into continuously many uniquely ergodic subshifts. As a consequence, the asymptotic frequency of any finite pattern in a given smooth sequence over $\{1,3\}$ is always well-defined and depends only on its so-called “type sequence“. I will also discuss the minimality of these subshifts.
+
+- date: 2026-12-08
+  speaker: Christian B. Hughes
+  speaker_url: https://christianbhughes.com/
+  title: Clustering of Return Words in the Languages of Arbitrary Standard IETs
+  abstract: |
+    Interval exchange transformations (IETs) are dynamical systems that rearrange finitely many sub-intervals of an interval; their symbolic codings admit languages with rich combinatorial properties. We study return words in IET languages and their connection to the Burrows-Wheeler transform, a word transform often employed in text pre-compression, and show, via stepwise morphisms attached to an extended induction on IETs, that every return word in the language of an arbitrary standard IET is clustering with respect to the IET's defining permutation, in turn answering a question of Mélodie Lapointe.
+
+- date: 2026-12-22
+  speaker: Jeffrey O. Shallit
+  speaker_url: https://cs.uwaterloo.ca/~shallit/
+  title: LLM's and Combinatorics on Words
+  abstract: |
+    This talk will consist of three parts. In the first part, I'll briefly survey some new results that I and my co-authors have obtained this year by using various LLM's. You can see some of them on my page https://cs.uwaterloo.ca/~shallit/papers.html where an asterisk at the start of an entry means we used an LLM to obtain some or all of the results.
+
+    In the second part, I'll mention a list of issues that this new, powerful technology raises for mathematics in general, and combinatorics on words in particular.
+
+    In the third part, I'll throw it open to an open-ended audience discussion of the issues, so if you have been following what's going on, please think in advance about questions and issues you might want to discuss.
+
+# ---------- 2026: прошедшие ----------
+
+- date: 2026-09-29
+  speaker: Anna Frid
+  speaker_url: https://www.i2m.univ-amu.fr/perso/anna.frid/
+  title: Palindromic length in free groups, Catalan expressions, and new risks for mathematicians
+  video: https://youtu.be/a6rcIOpOREQ
+  abstract: |
+    We characterize words of a given palindromic length in a free group in terms of Catalan expressions. Also, we discuss why publishing titles of future talks before the preprint is online can be risky nowadays.
+
+    This is a joint work with Volker Diekert, Silas Natterer and Alexander Thumm.
+
+- date: 2026-09-15
+  speaker: Reem Yassawi
+  speaker_url: https://www.qmul.ac.uk/maths/profiles/yassawir.html
+  title: Cobham’s theorem for Gaussian numerations
+  abstract: |
+    Possibly the most important theorem concerning automatic sequences is Cobham’s theorem, first proved in 1969. Very roughly speaking, it says that the base-$k$ and base-$l$ expansions of natural numbers cannot be correlated if $k$ and $l$ are multiplicately independent, i.e., if there do not exist $m$ and $n$ such that $k^m = l^n$. Precisely, a sequence $a = (a_n)_{n\ge 0}$ is $k$-automatic if $a_n$ is a finite-state function of the base-$k$ expansion of $n$. Cobham’s theorem states that if $k$ and $l$ are multiplicatively independent, then a sequence is both $k$- and $l$-automatic if and only if it is eventually periodic.
+
+    One can also consider Cobham’s theorem for Euclidean domains, such as the Gaussian integers $\mathbb Z[i]$. In 2003, Hansel and Safer considered $\alpha = -m+i$ as a base for Gaussian numeration systems $(m \ge 1)$, with digits from the set $\{0, 1, \dots, m^2\}$. Any two Gaussian integers of this form must be multiplicatively independent. Assuming the four exponentials conjecture, Hansel and Safer showed that for such Gaussian integers $\alpha$ and $\beta$, if the characteristic function of an infinite $S \subset \mathbb Z[i]$ is both $\alpha$- and $\beta$-recognizable, then it must be syndetic. They conjectured that this set must be eventually periodic.
+
+    In this talk I will describe how we can prove the following version of Cobham’s theorem, for the largest possible family of Gaussian numerations, with any generating finite digit set and without using the four exponentials conjecture. We show that if $|\alpha| > 1$ and $|\beta| > 1$ are multiplicatively independent, and if one of the Gaussian integers $\alpha, \beta$ is not the root of an integer, then any sequence $(a_z)_{z\in\mathbb Z[i]}$ that is both $\alpha$- and $\beta$-automatic must be eventually periodic. In particular, Hansel and Safer’s conjecture is proved true. The requirement that one of $\alpha$ and $\beta$ must be a root of an integer cannot be relaxed. This is joint work with Álvaro Bustos-Gajardo and Robbert Fokkink.
+
+- date: 2026-06-23
+  speaker: Benoit Cloitre
+  speaker_url: https://arxiv.org/search/math?searchtype=author&query=Cloitre,+B
+  title: The Thue-Morse Transform
+  abstract: |
+    We define a transform $T$ on binary words. Given a binary word, we use the positions of its zeros and ones to build a new binary word. Applied to the alternating word $a_0 = 0101\ldots$, the transform gives the Thue-Morse word. We then study the orbit $a_m = T^m(a_0)$, together with the sequences $u_m$ and $v_m$ giving the positions of the ones and the zeros in $a_m$. We obtain an explicit formula for $a_m(n)$ in terms of the binary digits of $n$ and $m-1$. From this formula we derive Prouhet-Tarry-Escott identities, composition formulas that generalize the identities for evil and odious numbers, and a recurrence formula for the factor complexity of $a_m$. We end with a few directions, such as applying the transform to the Fibonacci word, which yields the Fibonacci-Thue-Morse word.
+
+- date: 2026-06-09
+  speaker: Ľubomíra Dvořáková
+  speaker_url: https://kmlinux.fjfi.cvut.cz/~balkolub/
+  title: Attractors of sequences coding beta-integers
+  abstract: |
+    String attractor is an intensively studied object in Combinatorics on Words. In our talk, we will recall known results and also some previously used techniques. We will then describe minimal string attractors of prefixes of simple Parry sequences. These sequences form a coding of distances between consecutive beta-integers in numeration systems with a real base beta. Simple Parry sequences have been recently studied from this point of view and (not necessarily minimal) attractors of their prefixes have been described and a conjecture that attractors of alphabet size should be sufficient was stated. We prove this conjecture. Moreover, we provide attractors of prefixes of some particular form of binary non-simple Parry sequences.
+
+- date: 2026-05-12
+  speaker: Léo Vivion
+  speaker_url: https://www-lmpa.univ-littoral.fr/~lvivion/
+  title: New examples of words for which binomial complexities and subword complexity coincide
+  note: The talk was not recorded at the speaker's request.
+  abstract: |
+    In 2015, Rigo and Salimov introduced a family of complexities that forms a scale between abelian complexity and factor complexity: the $k$-binomial complexities. In particular, they showed that Sturmian words satisfy the following remarkable combinatorial property: their $2$-binomial complexity is equal to their factor complexity. Since then, the only other known example satisfying this property is the Tribonacci word.
+
+    In this talk, I will present some stability results for words whose $k$-binomial complexities coincide with their factor complexity, notably under letter deletion and a coloring operation. These stability properties allow to show that several well-known families of words also have their $2$-binomial complexity equal to their factor complexity.
+
+- date: 2026-04-28
+  speaker: Bastiàn Espinoza
+  speaker_url: https://sites.google.com/ug.uchile.cl/espinoza
+  title: The Thue-Morse word in base 3/2
+  abstract: |
+    A rich family of symbolic dynamical systems of low complexity is given by automatic sequences. These sequences are obtained by feeding the base-$k$ expansions of integers, for a fixed integer base $k$, into a finite automaton. In this talk, we turn to automatic sequences in rational bases, using as a guiding example a rational-base analogue of one of the most classical integer-base automatic words. Namely, we consider the Thue–Morse word in base $3/2$, whose $n$-th term is given by the sum modulo 2 of the digits in the base-$3/2$ representation of $n$. Our results show that, although this base-$3/2$ variant is substantially more complex than classical automatic words (for instance, it is not generated by iterating a single substitution, and its factor complexity grows superlinearly) it nevertheless retains several characteristic properties of the integer-automatic world. More precisely, we prove uniform recurrence, establish the existence of letter frequencies, and show several combinatorial symmetries of its language analogous to those of the classical base-2 word. Our approach relies on describing the word via the periodic iteration of two substitutions, studying the induced action of these substitutions on the $2$-adic integers, and applying Pontryagin duality on this group.
+
+    This is joint work with Julien Cassaigne, Michel Rigo, and Manon Stipulanti.
+
+- date: 2026-04-14
+  speaker: Idrissa Kaboré
+  title: On modulo-recurrence and window complexity in infinite words
+  abstract: |
+    In this talk, first, I will recall the notions of modulo-recurrent words and of window complexity. These notions are introduced in 2007. Then, I present some properties of these notions. After that, I will present the notions of uniform modulo-recurrence and of strong modulo-recurrence. These notions are defined recently in a joint work with Julien Cassaigne. Sturmian words are uniformly (resp. strongly) modulo-recurrent words. Then, I will address the window complexity of the Thue-Morse. To finish, I will present a recurrent aperiodic word with bounded window complexity.
+
+- date: 2026-03-31
+  speaker: Paulina Cecchi Bernales
+  speaker_url: https://sites.google.com/view/paulinacb
+  title: Interplay between combinatorics and dynamical properties in minimal symbolic systems
+  abstract: |
+    Symbolic systems, also known as subshifts, are topological dynamical systems whose phase space consists of infinite sequences of symbols, evolving under the action of the (left) shift transformation. As infinite words, the elements of a symbolic system possess combinatorial properties associated with their language, and it is natural to ask how these combinatorial properties determine or interact with the properties of the system as a dynamical system, or vice versa. In this talk, I will briefly review the basic notions of symbolic systems and some classical results which connect their combinatorial and dynamical properties, particularly for subshifts generated by substitutions. I will then present more recent results illustrating the impact of combinatorics on the spectral properties of minimal subshifts. In these results, combinatorial objects such as extension graphs or coboundaries will play an important role. This is a part of a joint work with V. Berthé and B. Espinoza.
+
+- date: 2026-03-17
+  speaker: Gwenaël Richomme
+  speaker_url: https://www.lirmm.fr/~richomme/CV/responsabilites.html
+  title: "On some 2-binomial coefficients of binary words: geometrical interpretation, partitions of integers, and fair words"
+  abstract: |
+    The binomial notation $\binom{w}{u}$ represents the number of occurrences of the word $u$ as a (scattered) subword in $w$. We first introduce and study possible uses of a geometrical interpretation of $\binom{w}{ab}$ and $\binom{w}{ba}$ when $a$ and $b$ are distinct letters. We then study the structure of the $2$-binomial equivalence class of a binary word $w$ (two words are $2$-binomially equivalent if they have the same binomial coefficients, that is, the same numbers of occurrences, for each word of length at most $2$). Especially we explain the existence of an isomorphism between the graph of the $2$-binomial equivalence class of $w$ with respect to a particular rewriting rule and the lattice of partitions of the integer $\binom{w}{ab}$ with $\binom{w}{a}$ parts and greatest part bounded by $\binom{w}{b}$. Finally we study binary fair words, the words over $\{a, b\}$ having the same numbers of occurrences of $ab$ and $ba$ as subwords $\left(\binom{w}{ab} = \binom{w}{ba}\right)$. In particular, we sketch a proof of a recent conjecture related to a special case of the least square approximation.
+
+- date: 2026-03-03
+  speaker: Ingrid Vukusic
+  speaker_url: https://orcid.org/0000-0002-2499-3401
+  title: Balanced rectangles over Sturmian words
+  abstract: |
+    One of the many properties of the famous infinite Fibonacci word $01001010\cdots$ is that it is balanced. This means that any two blocks of the same length have either the same weight or their weights are off by $1$. Results by Berthé and Tijdeman show that a 2-dimensional variant of the Fibonacci word cannot be balanced. However, for certain pairs $(m,n)$, the $m\times n$ rectangles are balanced, and recently all such $(m,n)$ were fully characterised. We extend this characterisation to completely general Sturmian words. The proof is based on Diophantine approximation, and I will explain why Ostrowski representations are “everything one could wish for”.
+
+- date: 2026-02-17
+  speaker: Steven Robertson
+  speaker_url: https://sites.google.com/view/stevenrobertson
+  title: Number walls of automatic sequences
+  abstract: |
+    Given any one-dimensional sequence S, one can generate a unique two-dimensional sequence by considering the determinants of the Toeplitz matrices defined by S. This is known as the number wall of S. It is conjectured that if S is automatic, then the number wall of S is itself a two-dimensional automatic sequence. In this talk, we will discuss evidence towards this conjecture as well as some recent partial results. The talk aims to be accessible for people with no experience of number walls.
+
+- date: 2026-02-03
+  speaker: Annika Huch
+  speaker_url: https://scholar.google.com/citations?user=65FAE84AAAAJ&hl=de
+  title: A Word Reconstruction Problem for Polynomial Regular Languages
+  abstract: |
+    The reconstruction problem concerns the ability to uniquely determine an unknown word from querying information on the number of occurrences of chosen subwords. In the joined work with M. Golafshan and M. Rigo we focused on the reconstruction problem when the unknown word belongs to a known polynomial regular language, i.e., its growth function is bounded by a polynomial. Exploiting the combinatorial and structural properties of these languages, we are able to translate queries into polynomial equations and transfer the problem of unique reconstruction to finding those sets of queries such that their polynomial equations have a unique integer solution.
+
+- date: 2026-01-20
+  speaker: Savinien Kreczman
+  speaker_url: https://orbi.uliege.be/profile?uid=p207127
+  title: Factor complexity and critical exponent of words in a Thue-Morse family
+  abstract: |
+    The Thue-Morse, Fibonacci-Thue-Morse and Allouche-Johnson words are related to the binary, Zeckendorf and Narayana numeration systems respectively, as they count the parity of the number of ones in representations of natural numbers in those systems. These three numeration systems can be seen as the special cases for $k=1,2,3$ of a positional numeration system based on the recurrence relation $U_n=U_{n-1}+U_{n-k}$. As such, the three words above can be seen as the first elements in a family of binary words related to those numeration systems.
+
+    In a recent preprint, J. Shallit put forth two conjectures on words of this family, the first concerning the first difference of their factor complexity and the second concerning their asymptotic critical exponent. In this talk, we will prove both conjectures by studying bispecial factors within those words. We will highlight a method by K. Klouda allowing us to fully list those bispecial factors and show how this list allows us to attack the conjectures in question. Joint work with Ľubomíra Dvořáková and Edita Pelantová.
+
+- date: 2026-01-06
+  speaker: Louis Marin
+  title: Maximal 2-dimensional binary words of bounded degree
+  abstract: |
+    (Authors: Alexandre Blondin Massé, Alain Goupil, Raphael L'Heureux, Louis Marin)
+
+    Let $d$ be an integer between $0$ and $4$, and $W$ be a $2$-dimensional word of dimensions $h \times w$ on the binary alphabet $\{0, 1\}$, where $h, w \in \mathbb Z_{>0}$. Assume that each occurrence of the letter $1$ in $W$ is adjacent to at most $d$ letters $1$. We provide an exact formula for the maximum number of letters $1$ that can occur in $W$ for fixed $(h, w)$. As a byproduct, we deduce an upper bound on the length of maximum snake polyominoes contained in a $h \times w$ rectangle.

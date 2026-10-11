@@ -1,0 +1,6 @@
+# Общие настройки сайта
+title: One World Combinatorics on Words Seminar
+timezone: Europe/Paris
+default_time: "15:00"        # время доклада, если в talks.yml не указано другое
+talk_duration_minutes: 60    # для календаря (.ics)
+site_url: https://cow-seminar.github.io

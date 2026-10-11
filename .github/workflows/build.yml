@@ -1,0 +1,45 @@
+name: Build and publish the site
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Every day at 15:30 and 03:30 UTC (17:30/05:30 Paris in summer):
+    # a talk that has started moves from "Upcoming" to "Past" the same evening.
+    - cron: "30 15 * * *"
+    - cron: "30 3 * * *"
+  workflow_dispatch:   # "Run workflow" button on the Actions tab
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml markdown
+      - run: python build.py
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
