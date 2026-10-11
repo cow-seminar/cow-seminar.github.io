@@ -9,7 +9,8 @@ After every commit the site rebuilds itself in about 1–2 minutes.
 
 | File | Contents |
 |---|---|
-| `talks.yml` | all talks, upcoming and past |
+| `talks.yml` | current talks: upcoming and recent |
+| `archive/talks-YEAR.yml` | talks of 2020–2025, imported from the old wiki (same format) |
 | `about.md` | the header text: schedule, Zoom, organizers |
 | `slides/YEAR/` | PDF slides |
 | `config.yml` | site title, time zone, default talk time |
@@ -33,12 +34,15 @@ After every commit the site rebuilds itself in about 1–2 minutes.
 3. Click **Commit changes**.
 
 If the title is not known yet, just leave out `title`; the site will show "Title to be announced".
+Inside an abstract you can write `*italic*`, `**bold**`, links as `[text](https://...)`,
+and lists with lines starting with `- `.
 A talk at an unusual time: add `time: "16:00"` (Paris time).
 
 ## After the talk
 
 The talk moves from "Upcoming" to "Past talks" **by itself** the same evening.
-On January 1 the previous year's talks move to their own archive page automatically.
+On January 1 the previous year's talks move to their own archive page automatically
+(they can stay in `talks.yml`; which file a talk is in does not matter).
 
 **Slides:** upload the PDF to `slides/2027/` (Add file → Upload files).
 If the file name starts with the date of the talk, e.g. `20270112smith.pdf`, the slides
@@ -62,3 +66,10 @@ could not be matched to any talk.
 Note: GitHub pauses scheduled rebuilds if the repository has had no commits for 60 days
 (for instance over the summer). After such a break, any commit or the Run workflow button
 turns them back on.
+
+## How the page works
+
+The main page has two tabs, "Upcoming talks" and "Past talks" of the current year; the column on
+the right links to the archive page of every earlier year. Each talk is one row (time, speaker,
+title); clicking it opens the abstract, slides and video. Times are shown in the reader's own
+time zone. A link to a single talk looks like `https://cow-seminar.github.io/#20261013-kosoy`.

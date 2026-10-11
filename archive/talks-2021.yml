@@ -1,0 +1,483 @@
+# Talks of 2021 (imported from the old wiki). Same format as talks.yml.
+
+- date: '2021-12-20'
+  speaker: Jakub Konieczny
+  speaker_url: https://jakubmichalkonieczny.wordpress.com/
+  title: Finitely-valued generalised polynomials
+  video: https://youtu.be/SQovBWsIlHc
+  abstract: |
+    Generalised polynomials are expressions constructed from polynomials with the use of the floor function, addition and multiplication, such as $\lfloor \sqrt{2} n \lfloor \sqrt{3} n^2\rfloor + \sqrt{6} + \frac{1}{2}\rfloor$. Despite superficial similarity, generalised polynomials exhibit many phenomena which are impossible for ordinary polynomials. In particular, there exist generalised polynomial sequences which take only finitely many values but are not constant. This is the case, for instance, for Sturmian sequences.
+
+    In my talk, I will discuss finitely-valued generalised polynomial sequences from the perspective of combinatorics on words. The talk will include a survey of existing results on generalised polynomials, adapted to the current context, as well as several new results obtained in joint works with Boris Adamczewski and with Jakub Byszewski.
+
+- date: '2021-12-06'
+  speaker: Gabriele Fici
+  speaker_url: http://math.unipa.it/fici/
+  title: Some Remarks on Automatic Sequences, Toeplitz words and Perfect Shuffling
+  video: https://youtu.be/ywuLXRBXC00
+  abstract: |
+    One of the many nice properties of the Thue-Morse sequence $t = 0110100110010110\cdots$ is that t is equal to the perfect shuffling of itself with its binary complement $(1-t)$, i.e., it can be defined by means of the equation $t = t  ⧢ (1 − t)$. In general, for any automatic sequence $w$, there exist two automatic sequences $w'$ and $w’’$ such that $w = w'  ⧢ w''$. We call the sequences $w’$ and $w’’$ the even and the odd part of $w$, respectively. We will exhibit some curious facts about this decomposition for some (more or less) known 2- and 3-automatic sequences.
+
+    [Follow-up with some answers](https://arxiv.org/pdf/2112.12125.pdf)
+
+- date: '2021-11-22'
+  time: '16:15'
+  speaker: Daniel Gabric
+  speaker_url: https://cs.uwaterloo.ca/~dgabric/
+  title: Words that almost commute
+  video: https://youtu.be/CEKR03q97RE
+  abstract: |
+    The  *Hamming distance* $\text{ham}(u,v)$ between two equal-length words $u$, $v$ is the number of positions where $u$ and $v$ differ. The words $u$ and $v$ are said to be *conjugates* if there exist non-empty words $x,y$ such that $u=xy$ and $v=yx$. The smallest value $\text{ham}(xy,yx)$ can take on is $0$, when $x$ and $y$ commute. But, interestingly, the next smallest value $\text{ham}(xy,yx)$ can take on is $2$ and not $1$. We provide an efficient formula to count the number $h(n)$ of length-$n$ words $u=xy$ over a $k$-letter alphabet that have a conjugate $v=yx$ such that $\text{ham}(xy,yx)=2$. We also provide efficient formulae for other quantities closely related to $h(n)$. Finally, we give some results on the asymptotic behaviour of $h(n)$.
+
+- date: '2021-11-22'
+  time: '15:45'
+  speaker: Jarosław Grytczuk
+  speaker_url: https://www.tcs.uj.edu.pl/grytczuk
+  title: Twins in permutations
+  video: https://youtu.be/IvE0h2ifq6Q
+  abstract: |
+    A pair of disjoint subsequences in a permutation having the same relative order is called twins. How long twins must occur in every permutation of length n?
+    The shape of a sequence of distinct integers is a binary sequence of signs of differences of consecutive terms of the sequence. A pair of disjoint subsequences in a permutation having the same shape is called weak twins. How long weak twins must occur in every permutation of length n?
+    I will present some results and conjectures concerning the above questions.
+
+- date: '2021-11-22'
+  time: '15:30'
+  speaker: Jeffrey O. Shallit
+  speaker_url: https://cs.uwaterloo.ca/~shallit/
+  title: Abelian cubes and additive cubes in the Tribonacci word
+  video: https://youtu.be/lZty0XW8dJk
+  abstract: |
+    In this short talk I show how to obtain a result of Robbins and (later)
+    Ardila on partitions of integers in Fibonacci numbers, and much more,
+    using a 2001 transducer created by Jean Berstel.   The "fun" part is
+    that once you have Berstel's transducer, the rest follows by purely
+    computational means.
+
+- date: '2021-11-22'
+  time: '15:00'
+  speaker: Gregory Kucherov
+  speaker_url: https://www-igm.univ-mlv.fr/~koutcher/
+  title: Minimizers and one question about de Bruijn graphs
+
+- date: '2021-11-08'
+  speaker: Dan Rust
+  speaker_url: https://www.open.ac.uk/people/dr8563
+  title: Random substitutions
+  video: https://youtu.be/PJmvze2x5so
+  abstract: |
+    A random substitution is a generalisation of a substitution on a finite alphabet. Whereas with classical substitutions, letters have a single word as an image, random substitutions have a finite set of possible image words that are independently chosen each time it is applied to the letters in a word. As an example, the `random Fibonacci substitution' is given by
+
+    $$ a \mapsto \{ab,ba\}, b \mapsto \{a\}.$$
+
+    This gives rise to languages of legal words that share similar properties with substitutive words (i.e., hierarchical structures) but which also have exponential complexity functions (entropy). I will give an overview of this rarely explored class of systems, some of the aspects that have recently been studied, and some easy-to-state open problems.
+
+- date: '2021-10-25'
+  speaker: Fabien Durand
+  speaker_url: https://www.lamfa.u-picardie.fr/fdurand/
+  title: 'Beyond substitutive sequences : Self-induced dynamical systems and sequences on compact alphabets'
+  video: https://youtu.be/RbOh2Gv3kvw
+  abstract: |
+    It is well-known that primitive substitutions are recognizable. This property implies that the minimal substitution subshifts $(X,S)$ are self-induced. That is, there exists a clopen set $U$ included in $X$ such that $(U,S_U)$ is isomorphic to $(X,S)$, where $S_U (x)=S^n (x)$ and $n>0$ is the first iterate coming back to $U$.
+
+    We will see that all dynamical systems are self-induced in a measurable perspective.
+
+    But from a topological point of view self induction characterizes minimal substitution subshifts on possibly infinite alphabets (even uncountable).
+
+- date: '2021-10-11'
+  speaker: France Gheeraert
+  speaker_url: https://www.uliege.be/cms/c_9054334/fr/repertoire?uid=u227292
+  title: '$S$-adic characterization of dendric languages: ternary case'
+  video: https://youtu.be/IgvYDLqq958
+  abstract: |
+    Uniformly recurrent dendric languages generalize Arnoux-Rauzy languages and interval exchanges and are defined via the left-, right- and biextensions of their words. In a series of articles, Berthé et al. introduced them and, among other results, proved that this family is stable under derivation, which leads to the existence of particular $S$-adic representations.
+
+    In this talk, we will see how we can use the properties of these representations to obtain an $S$-adic characterization of uniformly recurrent dendric languages. We give some general results then focus on the case of a ternary alphabet to obtain a simpler characterization.
+
+    This is a joint work with Marie Lejeune and Julien Leroy.
+
+- date: '2021-09-27'
+  speaker: Arseny Shur
+  speaker_url: https://scholar.google.ru/citations?user=4S3-dV4AAAAJ&hl=en
+  title: Abelian repetition threshold revisited
+  video: https://youtu.be/M-LFj8HIU0M
+  abstract: |
+    Abelian repetition threshold ART$(k)$ is the number separating fractional Abelian powers which are avoidable and unavoidable over the $k$-letter alphabet. In contrast with the «usual» repetition threshold RT$(k)$, no exact values of ART$(k)$ are known. The lower bounds were proved in [A.V. Samsonov, A.M. Shur. On Abelian repetition threshold. RAIRO ITA, 2012] and conjectured to be tight. We present a method of study of Abelian power-free languages using random walks in prefix trees and some experimental results obtained by this method. On the base of these results, we conjecture that the lower bounds for ART$(k)$ by Samsonov and Shur are not tight for all $k$ except for $k=5$ and prove this conjecture for $k=6,7,8,9,10$. Namely, we show that ART$(k)>(k-2)(k-3)$ in all these cases.
+
+- date: '2021-07-26'
+  speaker: Jason Bell
+  speaker_url: http://www.math.uwaterloo.ca/~jpbell/
+  title: Lie complexity of words
+  video: https://youtu.be/Pu66-YpPWgo
+  abstract: |
+    Given a right-infinite word $\bf{w}$ over a finite alphabet, we introduce a new complexity function $L_{\bf w}(n)$, motivated by the theory of Lie algebras, whose value at $n$ is the number of equivalence classes of factors $x$ of ${\bf w}$ of length $n$ with the property that every cyclic permutation of $x$ is again a factor of ${\bf w}$, where two words $x$ and $y$ are equivalent if there exist words $a$ and $b$ such that $x=ab$ and $y=ba$.  We show that the Lie complexity function is uniformly bounded for words ${\bf w}$ of linear factor complexity and that it is a $k$-automatic sequence when ${\bf w}$ is $k$-automatic.  As a consequence of these results we can show that if ${\bf w}$ is a word of linear factor complexity then there are only finitely many primitive factors $v$ of ${\bf w}$ with the property that $v^n$ is a factor of ${\bf w}$ for every $n\ge 1$.  We also consider extensions of these results.  This is joint work with Jeffrey Shallit.
+
+- date: '2021-07-12'
+  speaker: Štěpán Holub
+  speaker_url: https://www2.karlin.mff.cuni.cz/~holub/
+  title: Using Isabelle/HOL in Combinatorics on Words research
+  video: https://youtu.be/1Bjbe3z-_VI
+  abstract: |
+    In this talk I will introduce a (growing) library of results in Combinatorics on Words formalized in the proof assistant Isabelle/HOL. I will emphasize the practical use of this library by a beginner, rather than theoretical aspects of either the proof assistant or the formalized results. The participants are therefore strongly encouraged to try Isabelle along with me during my talk, which requires to have Isabelle installed, as well as the draft version of our formalization downloaded. Questions stemming from your own attempts are most welcome, independently of how naïve they may seem.
+
+    For an installation guide, visit
+    https://gitlab.com/formalcow/combinatorics-on-words-formalized#a-short-guide-for-isabellehol-beginners-how-to-formalize-your-combinatorics-on-words-result
+    Everything should be straightforward. If you encounter any problem, you can write me to holub@karlin.mff.cuni.cz.
+    Issues with the installation can be also addressed during the preliminary technical session: I will be available 20 minutes before the official start.
+
+- date: '2021-06-28'
+  speaker: Florin Manea
+  speaker_url: http://flmanea.blogspot.com/
+  title: Combinatorial algorithms for subsequences
+  video: https://youtu.be/VKsPTYUpQME
+  abstract: |
+    In this talk, we will cover a series of recent algorithmic results related to the processing of subsequences occurring in words. Firstly, we will show how to test in linear time whether two given words have exactly the same set of subsequences of length $k$ (or, in other words, whether they are $k$-equivalent w.r.t. the Simon congruence), where $k$ is a positive integer also given as input. Secondly, we show how to compute in linear time, for two given words, which is the largest positive integer $k$ for which the two words are $k$-Simon-congruent. We will conclude this talk with a series of related results. On the one hand, we consider the problem of transforming words by edit operations so that they become Simon-congruent and, on the other hand, we consider the notion of absent subsequences in words and problems related to this.
+
+- date: '2021-06-21'
+  time: '17:30'
+  speaker: Bartłomiej Pawlik
+  speaker_url: https://www.researchgate.net/profile/Bartlomiej-Pawlik
+  title: Nonchalant procedure
+  video: https://youtu.be/u7wgNx11NFc
+
+- date: '2021-06-21'
+  time: '17:00'
+  speaker: Clément Lagisquet
+  speaker_url: https://www.lama.univ-smb.fr/index.php?use=membres&equipe=Logique&lang=en
+  title: 'On Markov Numbers: An answer to three conjectures from Aigner'
+  video: https://youtu.be/G3Glc3l0Lhc
+
+- date: '2021-06-21'
+  time: '16:30'
+  speaker: Palak Pandoh
+  speaker_url: https://www.researchgate.net/profile/Palak-Pandoh
+  title: Counting scattered palindromes in a finite word
+  video: https://youtu.be/gURjvP89fqw
+
+- date: '2021-06-21'
+  time: '16:00'
+  speaker: Jarkko Peltomäki
+  speaker_url: https://www.utu.fi/en/people/jarkko-peltomaki
+  title: Initial nonrepetitive complexity of regular episturmian words and their Diophantine exponents
+  video: https://youtu.be/QAF2Zsr5ljs
+
+- date: '2021-06-21'
+  time: '15:30'
+  speaker: Jarosław Duda
+  speaker_url: http://th.if.uj.edu.pl/~dudaj/
+  title: Generalized Fibonacci coding problem using Maximal Entropy Random Walk and Asymmetric Numeral Systems
+  video: https://youtu.be/0ZwZPyMbv_8
+  abstract: |
+    In Fibonacci coding we forbid '11' patterns, bringing question of generalization to more complex constraints. I will very briefly present how to practically handle such general situation, including 2D lattice (hard square problem), with motivation e.g. to increase capacity of hard disk. We will first find probability distribution of patterns in such ensemble of sequences, which can be obtained with MERW ( https://en.wikipedia.org/wiki/Maximal_entropy_random_walk ). Then we can use entropy coder - for this purpose I have introduced ANS ( https://en.wikipedia.org/wiki/Asymmetric_numeral_systems ): generalization of numeral systems to optimize for a chosen probability distribution of digits. I will also briefly present its two widely used variants: rANS with multiplication - now e.g. in JPEG XL image format, or tANS building finite state automaton for a given probability distribution - now used e.g. in Facebook Zstandard or Apple LZFSE compressors.
+
+- date: '2021-06-21'
+  time: '15:00'
+  speaker: Jakub Byszewski
+  speaker_url: https://scholar.google.com/citations?user=KWoxJVIAAAAJ&hl=en
+  title: Automata and finite order automorphisms of the power series ring
+  video: https://youtu.be/G-GQjTZsS5M
+
+- date: '2021-06-14'
+  speaker: Golnaz Badkobeh
+  speaker_url: https://sites.google.com/site/golnazbadkobeh/home
+  title: Left Lyndon tree construction
+  video: https://youtu.be/1tdOw4N47p0
+  abstract: |
+    We extend the left-to-right Lyndon factorisation of a word to the left Lyndon tree construction of a Lyndon word. It yields an algorithm to sort the prefixes of a Lyndon word according to the infinite ordering defined by Dolce et al. (2019). A straightforward variant computes the left Lyndon forest of a word. All algorithms run in linear time in the letter-comparison model.
+
+- date: '2021-06-07'
+  speaker: Pascal Ochem
+  speaker_url: http://www.lirmm.fr/~ochem/
+  title: Avoiding large squares in trees and planar graphs
+  video: https://youtu.be/tJFPPBtozcM
+  abstract: |
+    The Thue number $T(G)$ of a graph $G$ is the minimum number of colors needed to color $G$ without creating a square on a path of $G$. For a graph class $C$, $T(C)$ is the supremum of $T(G)$ over the graphs $G$ in $C$.
+    The Thue number has been investigated for famous minor-closed classes:
+    $T(tree) = 4$,  $7 \leq T(outerplanar) \leq 12$,  $11 \leq T(planar) \leq 768$.
+    Following a suggestion of Grytczuk, we consider the generalised parameters $T_k(C)$ such that only squares of period at least $k$
+    must be avoided. Thus, $T(C) = T_1(C)$.
+    We show that $T_2(tree) = 3$, $T_5(tree) = 2$, and $T_k(planar) \geq 11$ for every fixed $k$.
+    This is a joint work with Daniel Gonçalves and Matthieu Rosenfeld.
+
+- date: '2021-05-31'
+  speaker: Etienne Moutot
+  speaker_url: https://pageperso.lis-lab.fr/etienne.moutot/
+  title: Recent advances around Nivat's conjecture
+  video: https://youtu.be/h4MLAFsOCGQ
+  abstract: |
+    Nivat's conjecture states that any two dimensional word with "low enough" pattern complexity must be periodic.
+    Even if the statement of the conjecture is quite simple and very similar to the one dimensional Morse-Hedlund theorem, the conjecture is still open since stated by Maurice Nivat in 1997. However, there have been a lot of progress towards a proof in the last five years, and many new tools started to emerge. In 2015, Cyr and Kra started to use tools from symbolic dynamics to improve the bound required to prove periodicity. At about the same time, Jarkko Kari and Michal Szabados started to develop an algebraic approach to tackle the conjecture, leading to very elegant proofs of new results related to Nivat's conjecture.
+
+    In this talk I will present the conjecture and some of the last results around it. I will then focus on the algebraic approach initiated by Kari and Szabados.
+
+- date: '2021-05-17'
+  speaker: Jeffrey Shallit
+  speaker_url: https://cs.uwaterloo.ca/~shallit/
+  title: 'The Walnut Tutorial: Using A Tool for Doing Combinatorics on Words'
+  video: https://youtu.be/ovDQ9ZG8xAs
+  abstract: |
+    Walnut is free open-source software, written by Hamoon Mousavi, that can
+    rigorously prove or disprove claims about automatic sequences (broadly
+    understood), such as the Thue-Morse sequence, the Fibonacci infinite
+    word, and others.  It can also be used to create explicit formulas for
+    various aspects of such sequences, such as subword complexity,
+    palindrome complexity, and so forth.
+
+    In this talk I won't discuss how it works.   Instead I'll give a
+    tutorial, surveying the kinds of things you can and can't do with it.
+    We'll "get our hands dirty" and solve problems in real time.
+
+    At the end, if there's time, I'll solicit problems about such sequences
+    from the audience and try to solve them with Walnut.  Come prepared with
+    some conjecture you haven't been able to prove yet!
+
+    The tutorial lasts about 90 minutes.
+
+- date: '2021-05-10'
+  speaker: Kevin Buzzard
+  speaker_url: https://www.imperial.ac.uk/people/k.buzzard
+  title: Teaching computers to prove theorems
+  video: https://youtu.be/aOBez5vjSuE
+  abstract: |
+    Over the last few years I have been teaching proofs of theorems to computers, and teaching students how to teach proofs of theorems to computers. The Kruskal Katona theorem is a theorem I learnt as an MSc student, and Cambridge PhD student Bhavik Mehta taught it to the Lean theorem prover here: https://b-mehta.github.io/combinatorics/ . Lean's maths library `mathlib` https://github.com/leanprover-community/mathlib is now half a million lines of theorem proofs, many of them proved by mathematicians who have picked up this language, and most of them learnt it like Bhavik, just choosing a project and working on it. I will talk about how I learnt Lean, how you can learn Lean, what the point of learning Lean is, what the point of teaching Lean is, and where all this stuff might end up going. Rest assured --  I will not assume any prior familiarity with computer theorem provers in this talk!
+
+- date: '2021-05-03'
+  speaker: Gwenaël Richomme
+  speaker_url: http://www.lirmm.fr/~richomme/
+  title: On sets of indefinitely desubstitutable words
+  video: https://youtu.be/IhX14aWKmt8
+  abstract: |
+    The stable set associated to a given set $S$ of nonerasing endomorphisms or substitutions is the set of all right infinite words that can be indefinitely desubstituted over $S$. This notion generalizes the notion of sets of fixed points of morphisms. It is linked to $S$-adicity and to property preserving morphisms. Two main questions are considered. Which known sets of infinite words are stable sets? Which ones are stable sets of a finite set of substitutions? While bringing answers to the previous questions, some new way of characterizing several well-known sets of words such as the set of binary balanced words or the set of episturmian words are presented. A characterization of the set of nonerasing endomorphisms that preserve episturmian words is also provided.
+
+- date: '2021-04-26'
+  speaker: Luca Zamboni
+  speaker_url: https://scholar.google.com/citations?user=vP7iY3gAAAAJ&hl=fr&oi=ao
+  title: Singular words
+  video: https://youtu.be/AOsr3yFN6i4
+  abstract: |
+    The extremal solutions to certain problems in the theory of finite continued fractions are characterised by a special combinatorial property which we call the *singular* property. This property may be interpreted in the framework of finite words, cyclic words, and one and two-sided infinite words over arbitrary ordered alphabets. Each linear (resp. cyclic) word w is Abelian equivalent to a singular linear (resp. cyclic) word w’ which is in general unique up to reversal.  We develop an algorithm for generating all singular words having a prescribed Parikh vector which is based in part on a non-commutative variant of the usual Euclidean algorithm. This allows us to answer a question of G. Ramharter from 1983 on the extremal values of the regular and semi-regular cyclic continuants introduced by Motzkin and Straus in the 1950’s. We also confirm a conjecture of Ramharter in certain instances and exhibit counter examples in other cases.  As for infinite words, the singular property in the context of bi-infinite binary words coincides with the Markoff property which was shown by C. Reutenauer to be equivalent to the balance property.  We generalise this to higher alphabets by showing that the singular property  is the fundamental property which characterises the language structure of codings of symmetric k-interval exchange transformations.  This is based on a collaboration with Alessandro De Luca and Marcia Edson initiated during the first Covid lockdown of 2020.
+
+- date: '2021-04-12'
+  speaker: Valérie Goyheneche
+  speaker_url: https://arxiv.org/search/math?searchtype=author&query=Goyheneche%2C+V
+  title: Eigenvalues and constant arithmetical progressions for substitutive sequences
+  video: https://youtu.be/Pm3z1BcFF5Q
+  abstract: |
+    The main subject of this talk is to answer the following decidability question : does a substitutive sequence $x$ admit a constant arithmetical progression $ (x_{k+np})_n $?
+
+    Our method mainly relies on the link between constant arithmetical subsequences and (dynamical) eigenvalues of the underlying dynamical system.
+    We will explain a method to compute the set of (additive) eigenvalues associated to such systems.
+    We can then deduce, given an integer $p$, if the sequence $x$ contains a constant arithmetical progression with period $p$.
+    At the end of the talk, we will focus on the case of primitive constant-length substitutions, for which the set of such periods can be described by an automaton.
+
+- date: '2021-03-29'
+  speaker: Jacques Sakarovitch
+  speaker_url: https://perso.telecom-paristech.fr/jsaka/
+  title: From Fibonacci to golden mean representations
+  note: The video of this talk was not distributed.
+  abstract: |
+    *
+
+    Every positive integer can be written as a sum of Fibonacci numbers; this yields a Fibonacci representation of the integer. A positive integer can also be written as a (finite) sum of (positive and negative) powers of the golden mean; this yields a golden mean representation of the integer, with the radix point roughly in the middle of the writing. It is the golden mean expansion when it contains no consecutive digits equal to 1.
+
+    We show that there exists a letter-to-letter finite two-tape automaton that maps the Fibonacci representation of any positive integer onto its golden mean expansion, provided the latter is folded around the radix point.  As a corollary, the set of golden mean expansions of the positive integers is a linear context-free language.
+
+    These results are generalised to the more general case of integer representations in numeration systems built upon quadratic Pisot units.
+
+    Joint work with Christiane Frougny, published in 1999 in the Journal of Algebra and Computation. This talk is a follow-up to the one of October 15 by Michel Dekking, who kindly quoted this paper but deemed it hard to understand.
+
+- date: '2021-03-22'
+  time: '17:00'
+  speaker: Anna E. Frid
+  title: The semigroup of trimmed morphisms
+  video: https://youtu.be/nm49GQMAPc0
+  abstract: |
+    We start a study of possible orders of morphic images of words. In the binary case, it is known that every morphism is either order-preserving or order-reversing. For larger alphabets, the situation can be much more complicated.
+
+- date: '2021-03-22'
+  time: '16:30'
+  speaker: Jeffrey Shallit
+  title: Robbins and Ardila meet Berstel
+  video: https://youtu.be/Qr8znz4Gu28
+  abstract: |
+    In this short talk I show how to obtain a result of Robbins and (later)
+    Ardila on partitions of integers in Fibonacci numbers, and much more,
+    using a 2001 transducer created by Jean Berstel.   The "fun" part is
+    that once you have Berstel's transducer, the rest follows by purely
+    computational means.
+
+- date: '2021-03-22'
+  time: '16:00'
+  speaker: Francesco Dolce
+  title: On morphisms preserving palindromic richness
+  video: https://youtu.be/iDC9YchkgQk
+  abstract: |
+    A finite word is said to be rich if it has maximal number of palindromic factors (this is known to be the length of the word plus one). This definition can be naturally extended to infinite words.Sturmian words and Rote complementary symmetric sequences form two classes of binary rich words, while strict episturmian words and words coding symmetric interval exchange transformations give us other examples on larger alphabets.
+    In this talk we study homomorphisms of the free monoid which allow to construct new rich words from already known rich words. In particular, we focus on two types of morphisms: Arnoux-Rauzy morphisms and morphisms from Class $P_{ret}$. These morphisms contain Sturmian morphisms as a subclass. We show that Arnoux-Rauzy morphisms preserve the set of all rich words.
+    We also characterize $P_{ret}$ morphisms which preserve richness on binary alphabet.
+    This is a joint work with Edita Pelantová.
+
+- date: '2021-03-22'
+  time: '15:30'
+  speaker: Ibai Aedo
+  title: On long arithmetic progressions in binary Morse-like words
+  video: https://youtu.be/rARzCXHU_20
+  abstract: |
+    In this talk, I will present a joint work with Uwe Grimm, Yasushi Nagai and Petra Staynova based on a recent preprint: arXiv:2101.02056. Regarding the Prouhet-Thue-Morse word as a two-colouring of the positive integers, we look for long monochromatic arithmetic progressions occurring in the sequence.
+
+    The size of the longest arithmetic progression of difference $d=2^n-1$ was previously established by O. Parshina. Using a different approach, mainly based on exploiting the substitution structure of the Prouhet-Thue-Morse word, we will show how we can re-establish this result and find another series of long arithmetic progressions of difference d=2^n+1. Then, we will comment on a generalisation of these results for a special class of bijective binary words, and we will finish with some more general results and some open questions.
+
+- date: '2021-03-22'
+  time: '15:00'
+  speaker: Jane D. Palacio
+  title: Coverable bi-infinite substitution shifts
+  video: https://youtu.be/WnSPgzYb4rY
+  abstract: |
+    A finite or infinite word $w$ is said to be coverable if it can be formed by
+    overlapping or adjacent occurrences of some finite subword $u$ of $w$. Coverability of finite words was introduced by A. Apostolico and A. Ehrenfeucht in the
+    context of text algorithms in 1993. In 2004, S. Marcus extended the concept
+    of coverability to (one-sided) infinite sequences. In this presentation, we will
+    define the notion of coverable bi-infinite shifts.
+
+    In general, coverability of subshifts is not topologically invariant. Nevertheless, we show that a special type of coverability of substitutive shifts is invariant under topological conjugacy. To better understand coverability of
+    bi-infinite shifts, we aim to identify properties of substitutions that ensure
+    coverability or non-coverability of its associated shifts.
+
+    This is joint work with Manuel Joseph Loquias and Eden Delight Miro.
+
+- date: '2021-03-15'
+  speaker: Szymon Stankiewicz
+  speaker_url: https://scholar.google.com/citations?user=4N1aV1UAAAAJ&hl=fr&oi=ao
+  title: Square-free reducts of words
+  video: https://youtu.be/JFxZ8rzRw1M
+  abstract: |
+    We discuss a joint work with Jarosław Grytczuk (https://arxiv.org/abs/2011.12822) about square-free reducts of words.
+
+    In any finite word one may delete the repeated block of a square, obtaining thereby a shorter word. By repeating this process, a square-free word is eventually reached, which we call a reduct of the original word.
+
+    We will show that for each positive integer $n$ there is a word over ternary alphabet which can be reduced to at least $n$ different words and also that there is a word over alphabet of size four which has exactly $n$ reducts. We will also show that there exists infinitely many ternary words having exponential many reducts in the length of these words.
+
+    For a fixed alphabet one can create a poset with nodes being words and $u > v$ iff word $u$ can be reduced to word $v$. We will describe some properties of those posets.
+
+- date: '2021-03-01'
+  speaker: Mickaël Postic
+  speaker_url: http://math.univ-lyon1.fr/homes-www/postic/
+  title: Open and closed complexity functions of infinite words
+  video: https://youtu.be/k3WmdTRIs84
+  abstract: |
+    Closed words, also known as complete first returns, have been studied for a long time, and play an important role in symbolic dynamics. A word which is not closed is said to be open. In this talk based on a joint work with Olga Parshina, I will present a characterization of aperiodic words in terms of their open complexity function and closed complexity function, in the spirit of Morse and Hedlund's theorem. The preprint is available at https://arxiv.org/pdf/2005.06254.pdf
+
+- date: '2021-02-22'
+  time: '17:30'
+  speaker: Mélodie Andrieu
+  speaker_url: http://www.i2m.univ-amu.fr/perso/andrieu-es.m/index.html
+  title: A Rauzy fractal unbounded in all directions of the plane
+  abstract: |
+    Until 2001 it was believed that, as for Sturmian words, the imbalance of Arnoux-Rauzy words was bounded - or at least finite.  Cassaigne, Ferenczi and Zamboni disproved this conjecture by constructing an Arnoux-Rauzy word with infinite imbalance, i.e. a word whose broken line deviates regularly and further and further from its average direction.
+    Today, we hardly know anything about the geometrical and topological properties of these unbalanced Rauzy fractals. The Oseledets theorem suggests that these fractals are contained in a strip of the plane: indeed, if the Lyapunov exponents of the matricial product associated with the word exist, one of these exponents at least is nonpositive since their sum equals zero.
+    The study of the pairs of abelianized factors of Arnoux-Rauzy words disproves this belief.
+
+- date: '2021-02-22'
+  time: '17:00'
+  speaker: Florin Manea
+  speaker_url: http://flmanea.blogspot.com/
+  title: Efficiently Testing Simon's Congruence
+  video: https://youtu.be/7mQy6mLWll8
+  abstract: |
+    [full text](https://arxiv.org/abs/2005.01112)
+
+    Simon's congruence $\sim_k$ is a relation on words defined by Imre Simon in the 1970s and intensely studied since then. This congruence was initially used in connection to piecewise testable languages, but also found many applications in, e.g., learning theory, databases theory, or linguistics. The $\sim_k$-relation is defined as follows: two words are $\sim_k$-congruent if they have the same set of subsequences of length at most $k$. A long standing open problem, stated already by Simon in his initial works on this topic, was to design an algorithm which computes, given two words $s$ and $t$, the largest $k$ for which $s\sim_k t$. We propose the first algorithm solving this problem in linear time $O(|s|+|t|)$ when the input words are over the integer alphabet $\{1,\ldots,|s|+|t|\}$ (or other alphabets which can be sorted in linear time). Our approach can be extended to an optimal algorithm in the case of general alphabets as well.
+
+    To achieve these results, we introduce a novel data-structure, called Simon-Tree, which allows us to construct a natural representation of the equivalence classes induced by $\sim_k$ on the set of suffixes of a word, for all $k\geq 1$. We show that such a tree can be constructed for an input word in linear time. Then, when working with two words $s$ and $t$, we compute their respective Simon-Trees and efficiently build a correspondence between the nodes of these trees. This correspondence, which can also be constructed in linear time $O(|s|+|t|)$, allows us to retrieve the largest $k$ for which $s\sim_k t$.
+
+- date: '2021-02-22'
+  time: '16:30'
+  speaker: Štěpán Holub
+  speaker_url: https://www2.karlin.mff.cuni.cz/~holub/
+  title: Formalization of Combinatorics on Words in Isabelle/HOL
+  video: https://youtu.be/k8IBXZwIJn4
+  abstract: |
+    We present an ongoing project of formalization of Combinatorics on Words
+    in the proof assistant Isabelle/HOL.
+
+- date: '2021-02-22'
+  time: '16:00'
+  speaker: Lubka Dvořáková
+  speaker_url: https://kmlinux.fjfi.cvut.cz/~balkolub/
+  title: On balanced sequences with the minimal asymptotic critical exponent
+  video: https://youtu.be/pc9brhkLrV4
+
+- date: '2021-02-22'
+  time: '15:30'
+  speaker: Célia Cisternino
+  speaker_url: https://www.uliege.be/cms/c_9054334/fr/repertoire?uid=u227158
+  title: Two applications of the composition of a $2$-tape automaton and a weighted automaton
+  video: https://youtu.be/NZuKcWfiWUI
+
+- date: '2021-02-22'
+  time: '15:00'
+  speaker: Christophe Reutenauer
+  speaker_url: http://lacim-membre.uqam.ca/~christo/
+  title: An arithmetical characterization of Christoffel words
+  video: https://youtu.be/IQBcM45vxq4
+
+- date: '2021-02-15'
+  speaker: Petr Ambrož
+  speaker_url: https://kmlinux.fjfi.cvut.cz/~ambrop1/?loc=contacts&lg=en
+  title: Morphisms generating antipalindromic words
+  video: https://youtu.be/eL8-2DYBEzU
+  abstract: |
+    We introduce two classes of morphisms over the alphabet
+    $A=\{0,1\}$ whose fixed
+    points contain infinitely many antipalindromic factors. An
+    antipalindrome is a finite word invariant
+    under the action of the antimorphism $E:\{0,1\}^*\to\{0,1\}^*$, defined
+    by $E(w_1\cdots w_n)=(1-w_n)\cdots(1-w_1)$.
+    We conjecture that these two classes contain all morphisms (up to
+    conjugation) which generate infinite words with
+    infinitely many antipalindromes. This is an analogue to the famous HKS
+    conjecture concerning infinite words
+    containing infinitely many palindromes. We prove our conjecture for two
+    special classes of morphisms,
+    namely (i) uniform morphisms and (ii) morphisms with fixed points
+    containing also infinitely many palindromes.
+
+- date: '2021-02-08'
+  speaker: Robert Mercas
+  speaker_url: http://robertmercas.com/
+  title: (Trying to do a) Counting of distinct repetitions in words
+  video: https://youtu.be/SxVNuHk-vEc
+  abstract: |
+    The
+    topic of counting the distinct repetitions that a word contains has been around for at least two decades. The problem of counting distinct squares in a word was introduced by Fraenkel and Simpson in ’98, who also showed that their number is upper bounded by twice the length of the word. However, their conjecture that the factor of 2 is superfluous (the length of the word is a strict bound) is still open (though there exist several improvements of their original result). Moreover, recently Manea and Seki showed that proving the bound for binary words is enough. Moreover, further work was done on counting distinct repetitions of higher exponent with quite sharp bounds.
+    By looking at non-extendable repetitions of power at least two (thus considering fractional ones as well) Kolpakov and Kucherov tried to bound in ‘99 the number of runs in a word (non-necessarily distinct). This was recently shown to be less than the length $n$ of the word that we consider and more than 0.9482 times $n$.
+    However, all of these ideas have a common sticking point, namely the three squares lemma of Crochemore and Rytter, which they all use as main tool. In this talk I will present a different technique (which so far is not fully exploited) of trying to count distinct squares and show some surprising connections between all of the above notions.
+
+- date: '2021-02-01'
+  speaker: Jean-Paul Allouche
+  speaker_url: https://webusers.imj-prg.fr/~jean-paul.allouche/
+  title: Hidden automatic sequences
+  video: https://youtu.be/NWE0t9lji5c
+  abstract: |
+    We discuss a joint work with Michel Dekking and Martine Queffélec
+    (https://arxiv.org/abs/2010.00920) about sequences given as
+    fixed points of non-uniform morphisms that happen to be actually
+    automatic.
+
+    One of the most ancien example is probably the one due to Berstel,
+    who proved that the Istrail squarefree sequence defined as the fixed
+    point of the morphism $f$ with $f(0) = 12$, $f(1) = 102$, $f(2) = 0$ is also
+    $2$-automatic.
+
+    After revisiting an old criterion due to M. Dekking at the end of the 70's,
+    we give several examples (in particular of sequences in the OEIS).
+    Finally we focus on morphisms associated with Grigorchuk(-like) groups.
+
+- date: '2021-01-04'
+  speaker: Anna Frid
+  speaker_url: http://www.i2m.univ-amu.fr/perso/anna.frid/
+  title: Is *not* prefix palindromic length of a $k$-automatic word $k$-regular?
+  video: https://youtu.be/a4f7ITNzQHA
+  abstract: |
+    We consider the function of the prefix palindromic length for $k$-automatic words and prove that it is $k$-regular for such words containing a finite number of distinct palindromes, like for example the paperfolding word. We also observe that in the opposite case, if the number of distinct palindromes is infinite, this function can be $k$-regular, as for the Thue-Morse word, or seemingly not, as for the period-doubling word. The fact of non-regularity, however, stays unproven.
+
+    This is a joint work with Enzo Laborde and Jarkko Peltomäki. The preprint is available at https://arxiv.org/abs/2009.02934.

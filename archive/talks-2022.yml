@@ -1,0 +1,287 @@
+# Talks of 2022 (imported from the old wiki). Same format as talks.yml.
+
+- date: '2022-12-19'
+  speaker: Jason Bell
+  speaker_url: https://www.math.uwaterloo.ca/~jpbell/
+  title: Noncommutative rational Pólya series
+  video: https://youtu.be/N4dYRYDCGv0
+  abstract: |
+    A Pólya series over a field $K$ is a formal noncommutative power series whose nonzero coefficients are contained in a finitely generated subgroup of the multiplicative group of $K$. A complete description of such one-variable series was given by Pólya, and an extension to general noncommutative rational series in terms of unambiguous weight automaton was later conjectured by Reutenauer.  We explain how to prove Reutenauer’s conjecture and discuss certain decidability aspects of our work.  This is joint work with Daniel Smertnig.
+
+- date: '2022-12-05'
+  speaker: Josef Rukavicka
+  speaker_url: https://dblp.org/pid/10/10715.html
+  title: Palindromic factorization of rich words
+  video: https://youtu.be/ZrhASARFxVM
+  abstract: |
+    A finite word $w$ is called *rich* if it contains $\vert w\vert+1$ distinct palindromic factors including the empty word. For every finite rich word $w$ there are distinct nonempty palindromes $w_1, w_2,\dots,w_p$ such that $w=w_pw_{p-1}\cdots w_1$ and $w_i$ is the longest palindromic suffix of $w_pw_{p-1}\cdots w_i$, where $1\leq i\leq p$. This palindromic factorization is called *UPS-factorization*. Let $luf(w)=p$ be the *length of UPS-factorization* of $w$.
+
+    In 2017, it was proved that there is a constant $c$ such that if $w$ is a finite rich word and $n=\vert w\vert$ then $luf(w)\leq c\frac{n}{\ln{n}}$.
+    We improve this result as follows: There are constants $\mu, \pi$ such that if $w$ is a finite rich word and $n=\vert w\vert$ then \[luf(w)\leq \mu\frac{n}{e^{\pi\sqrt{\ln{n}}}}\mbox{.}\]
+    The constants $c,\mu,\pi$ depend on the size of the alphabet.
+
+    [paper](https://doi.org/10.1016/j.dam.2022.03.030)
+
+- date: '2022-11-21'
+  speaker: Sebastián Barbieri
+  speaker_url: http://www.sbarbieri.usach.cl/
+  title: Indistinguishable asymptotic pairs
+  video: https://youtu.be/KnOrS4mjsQ8
+  abstract: |
+    We say two bi-infinite words are asymptotic if they differ in finitely many coordinates. We say they are indistinguishable if for any finite word w, the number of occurrences of w that intersect the set of differences in each of them is the same. In this talk we will study these objects and show that they are very closely related to Sturmian configurations. We will also show that a higher-dimensional analogue of the theorem holds, and as an application of this result we will provide a formula for computing the complexity of a multidimensional Sturmian configuration on any finite connected support. This is joint work with S. Labbé.
+
+- date: '2022-11-07'
+  speaker: Daniel Krenn
+  speaker_url: https://www.danielkrenn.at/
+  title: $q$-Recursive Sequences and their Asymptotic Analysis
+  video: https://youtu.be/U4AjnSWhQMY
+  abstract: |
+    In this talk, we consider Stern’s diatomic sequence, the number of
+    non-zero elements in some generalized Pascal's triangle and the number
+    of unbordered factors in the Thue-Morse sequence as running examples.
+    All these sequences can be defined recursively and lead to the concept
+    of so-called $q$-recursive sequences. Here $q$ is an integer and at least $2$,
+    and $q$-recursive sequences are sequences which satisfy a specific type of
+    recurrence relation: Roughly speaking, every subsequence whose indices
+    run through a residue class modulo $q^M$ is a linear combination of
+    subsequences where for each of these subsequences, the indices run
+    through a residue class modulo $q^m$ for some $m < M$.
+
+    It turns out that this property is quite natural and many combinatorial
+    sequences are in fact $q$-recursive. We will see that $q$-recursive
+    sequences are related to $q$-regular sequences and a $q$-linear
+    representation of a sequence can be computed easily. Our main focus is the asymptotic
+    behavior of the summatory functions of $q$-recursive sequences. Beside
+    general results, we present a precise asymptotic analysis of our three examples. For the first two sequences, our analysis even leads to
+    precise formulae without error terms.
+
+- date: '2022-10-24'
+  speaker: Natalie Behague
+  speaker_url: https://nb453.user.srcf.net/
+  title: Synchronizing Times for $k$-sets in Automata
+  video: https://youtu.be/5RxgFdZgC4k
+  abstract: |
+    An automaton consists of a finite set of states and a collection of functions from the set of states to itself. An automaton is synchronizing if there is a word (that is, a sequence of functions) that maps all states onto the same state. Černý’s conjecture on the length of the shortest such word is one of the most famous open problem in automata theory. We considered the closely related question of determining the minimum length of a word that maps some k states onto a single state.
+
+    For synchronizing automata, we found a simple argument for general k almost halving the upper bound on the minimum length of a word sending k states to a single state. We further improved the upper bound on the minimum length of a word sending 4 states to a singleton from $0.5n^2$ to $≈ 0.459n^2$, and the minimum length sending 5 states to a singleton from $n^2$ to $≈ 0.798n^2$. I will discuss this result and some open questions.
+
+- date: '2022-10-17'
+  speaker: Giuseppe Romana
+  speaker_url: https://dblp.org/pid/244/9952.html
+  title: 'String Attractor: a Combinatorial object from Data Compression'
+  video: https://youtu.be/D7br0ADAgaU
+  abstract: |
+    Very recently, Kempa and Prezza [STOC 2018] introduced the notion of String Attractor in the field of Data Compression, and showed how this concept was already implicit in many other well known compression schemes.
+    Basically, a String Attractor $\Gamma$ of a finite word $w$ is a set of positions in $w$ such that each distinct factors that occurs in $w$ has at least an occurrence that crosses a position $j \in \Gamma$.
+    In this talk, we explore String Attractors from a combinatorial perspective.
+    We discuss how the size $\gamma^*$ of a string attractor of minimum size is affected when some classical combinatorial operations are applied to finite words.
+    Further, we show how the size and other structural properties of string attractors can be used to obtain new characterizations for infinite words.
+    Most of the results presented in this talk come from [A combinatorial view on string attractors, Theoret. Comput. Sci. 2021] and [String Attractors and Infinite Words, LATIN 2022] (to appear).
+
+- date: '2022-10-03'
+  speaker: Robbert Fokkink
+  speaker_url: https://dutiosb.twi.tudelft.nl/~fokkink/
+  title: A few words on games
+  video: https://youtu.be/pvW7NN_eJqg
+  abstract: |
+    An impartial combinatorial game involves a set of positions that are either won or lost for the player that moves next. These are the so-called N-positions. If you know the set of N-positions, then you have solved the game. Members of our community will immediately wonder if the characteristic sequence of the set of N-positions form a word. It turns out that Fibonacci word gives the set of N-positions in Wythoff Nim. Eric Duchene and Michel Rigo found other examples of impartial games that are given by words, initiating ongoing work on the link between words and games. In this talk I will show how a modification of Wythoff Nim can be described by the Tribonacci word. This is joint work with Dan Rust and Cisco Ortega.
+
+- date: '2022-09-19'
+  speaker: Shuo Li
+  title: On the number of squares in a finite word
+  video: https://youtu.be/mi6st9viWLQ
+  abstract: |
+    A conjecture of Fraenkel and Simpson states that the number of distinct squares in a finite word $w$ is bounded by its length. In this talk, we will review this conjecture from the perspective of the topological proprieties of the Rauzy graphs of $w$. We prove this conjecture by giving a stronger statement: the number of distinct squares in a finite word $w$ is bounded by the length of $w$ minus the number of distinct letters in $w$.
+
+- date: '2022-07-11'
+  speaker: Zachary Chase
+  speaker_url: http://people.maths.ox.ac.uk/~chase/
+  title: The separating words, $k$-deck, and trace reconstruction problems
+  video: https://youtu.be/VQgtVn_ykg8
+  abstract: |
+    What is the smallest size of a DFA that can separate two
+    given strings of length $n$? Can two distinct strings of length $n$ have
+    the same multiset of subsequences of length $n^{1/3}$? How many random
+    subsequences of length $n/2$ of an unknown string $x$ of length $n$ do you
+    need to determine $x$ with high probability? We discuss these three
+    problems, each having an exponential gap between the best known upper
+    and lower bounds, and touch upon how they might be more related than
+    one might expect.
+
+- date: '2022-06-27'
+  speaker: Pierre Popoli
+  speaker_url: https://sites.google.com/view/pierre-popoli
+  title: Maximum order complexity for some automatic and morphic sequences along polynomial values
+  video: https://youtu.be/losu5ymRikE
+  abstract: |
+    Automatic sequences are not suitable sequences for cryptographic
+    applications since both their subword complexity and their expansion
+    complexity are small, and their correlation measure of order 2 is
+    large. These sequences are highly predictable despite having a large
+    maximum order complexity. However, recent results show that polynomial
+    subsequences of automatic sequences, such as the Thue-Morse sequence
+    or the Rudin-Shapiro sequence, are better candidates for pseudorandom
+    sequences. A natural generalization of automatic sequences are morphic
+    sequences, given by a fixed point of a prolongeable morphism that is
+    not necessarily uniform. In this talk, I will present my results on
+    lowers bounds for the maximum order complexity of the Thue-Morse
+    sequence, the Rudin-Shapiro sequence and the sum of digits function in
+    Zeckendorf base, which are respectively automatics and morphic
+    sequences.
+
+- date: '2022-06-20'
+  speaker: Antoine Domenech
+  speaker_url: https://perso.ens-lyon.fr/antoine.domenech/
+  title: Avoiding doubled patterns
+  video: https://youtu.be/VCMvjae971w
+  abstract: |
+    A pattern $P$ is $k$-avoidable if there exists
+    an infinite word over $k$ letters that contains no occurrence of $P$.
+    A pattern is doubled if all its variables appear at least twice.
+    It is known that doubled patterns are 3-avoidable and it is conjectured
+    that only a finite number of doubled patterns are not 2-avoidable.
+    We show that square-free doubled patterns with at most 4 variables are 2-avoidable.
+    Then, for each pattern doubled $P$ with at most 3 variables that is
+    not 2-avoidable, we determine the minimum number of distinct
+    occurrences of $P$ that are contained in an infinite binary word.
+
+- date: '2022-06-13'
+  speaker: '[Kristina Ago](https://matematika.pmf.uns.ac.rs/en/about-us/people/kristina-ago/) and [Bojan Bašić](https://scholar.google.com/citations?user=lkQ85ooAAAAJ&hl=en)'
+  title: Some recent results on two "palindromicity" measures
+  video: https://youtu.be/Zhxap8ykrew
+  abstract: |
+    Various measures of the degree of "palindromicity" of a given word have been defined in the literature. In this talk we present some of our results concerning two such measures. The first one is the so-called *palindromic defect* (or only *defect*). Let $|\mathrm{Pal}(w)|$ denote the number of palindromic factors of a word $w$. The palindromic defect of $w$ is defined by $|w|+1-|\mathrm{Pal}(w)|$ (it can be proved that this value is always nonnegative). This definition can be naturally extended to infinite words. While infinite words whose defect is zero (called *rich*) have been researched quite much, there are noticeably less results in the literature on infinite words of finite positive defect. In the first part of the talk we introduce a construction of an infinite family of infinite words whose defect is finite and in many cases positive (with fully characterized cases when the defect is $0$), and we analyze their properties. Each of those words is either periodic (which is a less interesting case, and explicitly characterized), or recurrent but not uniformly recurrent. Examples of explicit constructions of such words that are not uniformly recurrent have been quite deficient in the literature so far.
+
+    The second part of talk is devoted to the so-called *MP-ratio*. The concept of MP-ratio is based on palindromic subwords (and not factors) of a given finite word. Call a word over an $n$-ary alphabet *minimal-palindromic* if it does not contain palindromic subwords of length greater than $\big\lceil\frac{|w|}n\big\rceil$. The *MP-ratio* of a given $n$-ary word $w$ is defined as the quotient $\frac{|rws|}{|w|}$, where $r$ and $s$ are words such that the word $rws$ is minimal-palindromic and that the length $|r|+|s|$ is minimal possible. In order for the MP-ratio to be well-defined, it has to be shown that such a pair $(r,s)$ always exist. It has been known for some time that this is true in the binary case, but this question becomes much more complicated for larger arities. In this talk we show that the MP-ratio is well-defined for any arity, and we present some further results on this topic.
+
+- date: '2022-05-30'
+  speaker: Pierre-Adrien Tahay
+  speaker_url: https://sites.google.com/view/pierre-adrien-tahay
+  title: Column representation of words in cellular automata
+  video: https://youtu.be/3OOwue_zFmA
+  abstract: |
+    The task of representing a sequence over a finite alphabet in the space-time
+    diagram of a cellular automaton is a non-trivial and still not entirely explored
+    topic. One of the first results on the subject was done by Fischer in 1965 with a construction of the characteristic sequence of primes numbers. Many results and improvements have been established since. In 2015, Rowland and Yassawi showed that there is a close connection between the $p$-automatic sequences and the linear cellular automata. More precisly the columns of linear cellular automata are $p$-
+    automatic sequences and all $p$-automatic sequences can be realized by some linear cellular automata with memory. Moreover their proof is constructive. In 2018, Marcovici, Stoll and Tahay investigated some constructions for nonautomatic sequences such as the characteristic sequences of polynomials and the Fibonacci word.
+
+    In this talk I will present recent results obtained in collaboration with Francesco Dolce where we generalized the construction for the Fibonacci word in a column of a cellular automaton, to any Sturmian word with quadratic slope. Our proof is constructive and use the ultimate periodicity of the continued fraction expansion of the slope of the word.
+
+- date: '2022-05-16'
+  speaker: Moussa Barro
+  speaker_url: https://www.linkedin.com/in/moussa-barro-5a4845102/
+  title: Billard dans le cube
+  video: https://youtu.be/rEFuFhcuWoM
+  note: in French with English slides
+  abstract: |
+    On considère le billard dans un cube. On code une trajectoire par les faces rencontrées. Le but de l'exposé sera de décrire le langage d'un tel mot dans le cas ou l'orbite n'est pas dense.
+
+- date: '2022-04-25'
+  speaker: Christophe Reutenauer
+  speaker_url: https://professeurs.uqam.ca/professeur/reutenauer.christophe/
+  title: Constructions and parametrization of conjugates of Christoffel words
+  video: https://youtu.be/9oAOybFWNKY
+  abstract: |
+    Following a recent work of Michel Laurent and the first author, we propose a deformation of the Rauzy rules (equivalently of the de Luca construction of standard words) in order to construct all conjugates of all Christoffel words (equivalently of all standard words). This construction is based on integer legal Ostrowski representations, following Frid. The constructed word depends only the represented integer  (and even works in the free group, up to conjugation however). Choosing greedy representations, we determine of the longest border of conjugates, thereby recovering results of Lapointe on the smallest periods. Choosing the lazy representation, we may revisit the Sturmian graph of Epifanio, Frougny, Gabriele, Mignosi and Shallit; in particular we show  that this graph is essentially a subgraph of the Stern-Brocot tree, and that the compact graph (which is a compaction of the minimal automaton of the set of suffixes of a central word) is similarly embedded in the tree of central words of Aldo de Luca.
+
+- date: '2022-04-04'
+  speaker: Colin Defant
+  speaker_url: https://sites.google.com/view/colin-defant/home
+  title: Anti-powers in Aperiodic Recurrent Words
+  video: https://youtu.be/IKet-akBlsw
+  abstract: |
+    In 2016, Fici, Restivo, Silva, and Zamboni introduced the notion of a $k$-anti-power, which is a word of the form $w_1 \cdots w_k$, where $w_1,\ldots,w_k$ are words of the same length that are all distinct. I will begin by reviewing the main results that these authors proved about anti-powers. I will then discuss anti-powers appearing as factors in the Thue-Morse word. This will lead into a discussion of anti-powers in aperiodic recurrent words and aperiodic morphic words.
+
+- date: '2022-03-21'
+  speaker: Narad Rampersad
+  speaker_url: https://www.uwinnipeg.ca/mathstats/faculty/narad-rampersad.html
+  title: Applications of Walnut to problems of local periodicity
+  video: https://youtu.be/7mzWpFm5Q6c
+  abstract: |
+    There are a number of natural choices for measuring the local
+    periodicity at a given position $i$ of an infinite word: for instance,
+    one could consider repetitions 1) ending at position $i$; 2) starting
+    at position $i$; or 3) centered at position $i$.  With regards to
+    option 1), it is known that aperiodic infinite words cannot have all
+    sufficiently large prefixes end with cubes.  It is natural then to ask
+    for such words how many prefixes can end with cubes.  Using Walnut, we
+    obtain a characterization of these prefixes for the Fibonacci word.
+    Regarding option 3), Mignosi and Restivo introduced an interesting
+    complexity measure: $h_{\bf w}(n)$, which is the average of the local
+    periods over the first $n$ positions of ${\bf w}$.  Again using
+    Walnut, we estimate the asymptotic behaviour of this function for some
+    2-automatic sequences, such as the Thue-Morse sequence, the
+    Rudin-Shapiro sequence, and the period-doubling sequence.
+
+- date: '2022-03-07'
+  speaker: Jean-Paul Allouche
+  speaker_url: https://webusers.imj-prg.fr/~jean-paul.allouche/
+  title: Thue and 7-3
+  video: https://youtu.be/lGueE9i36uc
+  abstract: |
+    March 7, 2022 (in French 7/3) is the 100th anniversary of the death of Axel Thue.
+    He was a Norwegian mathematician, principally known for his work in Diophantine
+    approximation, but he is also known for his work in combinatorics.
+
+    We will speak a little of his number-theoretic papers, and more about his contribution
+    in combinatorics, essentially restricting ourselves to the --ubiquitous-- Thue-Morse
+    or Prouhet-Thue-Morse sequence. We will try to survey not only some well-known
+    features of this sequence, but also less classical properties: one of these
+    is an occurrence of... 7/3 for this sequence, the other is about Shogi (将棋),
+    or Japanese chess, and the Sennichite (千日手) (a new rule decided after a play
+    dated March... 8, 1983).
+
+    To conclude this abstract, we do not resist to give a quote of Thue:
+    "The further removed from usefulness or practical application, the more important."
+    Removed from practical application? one might want to look at the definition of the
+    programming language "Thue" that Wikipedia describes as follows:
+    "Thue is an esoteric programming language invented by John Colagioia in early 2000.
+    It is a meta-language that can be used to define or recognize Type-0 languages from
+    the Chomsky hierarchy. Because it is able to define languages of such complexity,
+    it is also Turing-complete itself. Thue is based on a nondeterministic string
+    rewriting system called semi-Thue grammar, which itself is named after the Norwegian
+    mathematician Axel Thue."
+
+- date: '2022-02-21'
+  speaker: Etienne Moutot
+  speaker_url: https://emoutot.perso.math.cnrs.fr/
+  title: Pattern complexity of 2D substitutive shifts
+  video: https://youtu.be/0FpAbTJpJio
+  abstract: |
+    In this presentation, I will talk about pattern complexity of two-dimensional substitutive shifts. More precisely, I will focus on lower bounds on the complexity of **aperiodic** 2D substitutive shifts.
+
+    *Pattern complexity* consists in counting the number of different mxn rectangular patterns that appear in an infinite coloring of $\mathbb Z^2$ or in a shift space. A corollary of our recent work with Jarkko Kari on Nivat's conjecture [1] shows that any aperiodic subshift have pattern complexity at least $mn+1$ for all $m$ and $n$.
+
+    With Coline Petit-Jean we have been trying to improve this lower bound for a particular class of shift spaces: substitutive shifts. For some substitutions (*primitive* and *marked* substitutions), we show that if their shift space is aperiodic, then it has complexity at least $C*mn$, with $C>1$ a constant depending on the substitution. I will also talk briefly about non-marked substitutions and why our current proof does not apply to them, even if we believe that a similar result might still hold.
+
+    [1] Decidability and Periodicity of Low Complexity Tilings. Jarkko Kari, Etienne Moutot, Theory of Computing Systems, 2021
+
+- date: '2022-02-07'
+  speaker: Michel Dekking
+  speaker_url: http://dutiosc.twi.tudelft.nl/~dekking/
+  title: Combinatorics of Fibonacci and golden mean number representations
+  video: https://youtu.be/p2aPqCNYv6g
+  abstract: |
+    How many ways are there to represent a number as a sum of powers of the golden mean? Among these, what is the best way to do this? What is the relation with representing a number as a sum of Fibonacci numbers? I will give some answers to these questions in my talk.
+
+- date: '2022-01-24'
+  speaker: Markus Whiteland
+  speaker_url: https://people.mpi-sws.org/~mawhit/
+  title: On some decidable properties of discrete-time linear dynamical systems
+  video: https://youtu.be/Evn2C2Kme3Y
+  abstract: |
+    A discrete-time linear dynamical system (LDS) $(A,x)$ is the orbit of a point $x \in \mathbb{R}^d$ under a linear map $A\colon \mathbb{R}^d \to \mathbb{R}^d$. In this talk we consider decision problems on LDS arising from program verification, such as reachability problems: given a LDS $(A,x)$ and a semi-algebraic target set $T \in \mathbb{R}^d$, does the orbit intersect $T$? It is well-known that such questions quickly lead to open problems, such as Skolem's problem on linear recurrence sequences. We identify the borderline between hard instances and decidable instances with respect to the dimension of the target set $T$. The methods used in the decidable cases quickly give rise to symbolic dynamical systems over which we have a lot of control: this allows us to go beyond mere reachability to deciding $\omega$-regular properties of the LDS with respect to a low-dimensional target set $T$.
+
+    Joint work with C. Baier, F. Funke, S. Jantsch, T. Karimov, E. Lefaucheux, F. Luca, J. Ouaknine, D. Purser, A. Varonka, and J. Worrell.
+
+- date: '2022-01-10'
+  speaker: Lubomíra Dvořáková
+  speaker_url: https://kmlinux.fjfi.cvut.cz/~balkolub/
+  title: On minimal critical exponent of balanced sequences
+  video: https://youtu.be/iPaEkCbttcE
+  abstract: |
+    The conjecture stated by Rampersad, Shallit and Vandomme says that the minimal critical exponent of balanced sequences over the alphabet of size $d>4$ equals $(d-2)/(d-3)$. This conjecture is known to hold for $d=5, 6, 7, 8, 9, 10$.
+
+    In this talk, we will describe in more details the ideas and the techniques used to refute this conjecture by showing that the picture is different for bigger alphabets. We prove that critical exponents of balanced sequences over an alphabet of size $d>10$  are lower bounded by $(d-1)/(d-2)$ and this bound is attained for all even numbers $d>10$.
+
+    According to this result, we conjecture that the least critical exponent of a balanced sequence over $d$ letters is $(d-1)/(d-2)$ for all $d>10$.
