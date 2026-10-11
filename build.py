@@ -286,8 +286,7 @@ def sidebar(cfg, years, prefix, current=None):
     return f"""<aside class="side">
   <nav class="box">
     <h2>Seminar</h2>
-    <ul><li><a{' class="current"' if current is None else ''} href="{prefix}index.html">Current talks</a></li>{yt}
-    <li><a href="{prefix}calendar.ics">Calendar (.ics)</a></li></ul>
+    <ul><li><a{' class="current"' if current is None else ''} href="{prefix}index.html">Current talks</a></li>{yt}</ul>
   </nav>
   <nav class="box">
     <h2>Archives</h2>
