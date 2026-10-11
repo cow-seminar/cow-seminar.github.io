@@ -73,3 +73,11 @@ The main page has two tabs, "Upcoming talks" and "Past talks" of the current yea
 the right links to the archive page of every earlier year. Each talk is one row (time, speaker,
 title); clicking it opens the abstract, slides and video. Times are shown in the reader's own
 time zone. A link to a single talk looks like `https://cow-seminar.github.io/#20261013-kosoy`.
+
+## Slide links on researchseminars.org
+
+`tools/update_researchseminars.py` points the slide links of our talks on researchseminars.org
+to the PDFs on this site (matching talks by date and speaker). Run it on your own computer:
+`python3 update_researchseminars.py` shows what would change, `--apply` changes it.
+It needs your researchseminars.org e-mail and API token (see the comment at the top of the script).
+Run it again whenever new slides have been added here.

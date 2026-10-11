@@ -7,6 +7,7 @@ GitHub runs this automatically (see .github/workflows/build.yml).
 """
 import datetime as dt
 import html
+import json
 import os
 import re
 import shutil
@@ -464,6 +465,16 @@ def main():
             encoding="utf-8")
 
     (OUT / "calendar.ics").write_text(build_ics(cfg, talks), encoding="utf-8", newline="")
+    # machine-readable list of talks with slides/videos (used by tools/update_researchseminars.py)
+    base = cfg["site_url"].rstrip("/") + "/"
+    index = [{"date": t["start"].strftime("%Y-%m-%d"), "time": t["start"].strftime("%H:%M"),
+              "speaker": plain(t.get("speaker")), "surnames": surname_words(t.get("speaker")),
+              "title": plain(t.get("title")),
+              "slides": [s if s.startswith("http") else base + s for s in t["slides_list"]],
+              "video": t.get("video", ""), "page": base + ("" if t["start"].year >= now.year else
+                                                            f"archives/{t['start'].year}.html") + "#" + anchor_of(t)}
+             for t in talks]
+    (OUT / "talks.json").write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding="utf-8")
     shutil.copy(ROOT / "style.css", OUT / "style.css")
     shutil.copytree(ROOT / "assets", OUT / "assets")
     shutil.copy(ROOT / "assets" / "favicon-32.png", OUT / "favicon.ico")  # for browsers that ask /favicon.ico
