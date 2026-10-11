@@ -1,63 +1,64 @@
-# Сайт семинара One World Combinatorics on Words
+# One World Combinatorics on Words Seminar: website
 
-Сайт: https://cow-seminar.github.io
+Site: https://cow-seminar.github.io
 
-Всё редактируется прямо на github.com, ничего устанавливать не нужно.
-После каждого сохранения сайт пересобирается сам примерно за 1–2 минуты.
+Everything can be edited directly on github.com; nothing needs to be installed.
+After every commit the site rebuilds itself in about 1–2 minutes.
 
-## Какие файлы за что отвечают
+## Which file does what
 
-| Файл | Что в нём |
+| File | Contents |
 |---|---|
-| `talks.yml` | все доклады (будущие и прошедшие) |
-| `about.md` | текст шапки: расписание, Zoom, организаторы |
-| `slides/ГОД/` | PDF со слайдами |
-| `config.yml` | название, часовой пояс, время доклада по умолчанию |
-| `build.py`, `style.css`, `.github/` | движок сайта; трогать не нужно |
+| `talks.yml` | all talks, upcoming and past |
+| `about.md` | the header text: schedule, Zoom, organizers |
+| `slides/YEAR/` | PDF slides |
+| `config.yml` | site title, time zone, default talk time |
+| `build.py`, `style.css`, `.github/` | the site engine; no need to touch these |
 
-## Анонсировать новый доклад
+## Announcing a new talk
 
-1. Откройте `talks.yml` → значок карандаша (Edit).
-2. Добавьте запись (порядок записей не важен, отступы — пробелами):
+1. Open `talks.yml` and click the pencil icon (Edit).
+2. Add an entry anywhere (order does not matter; indent with spaces, not tabs):
 
    ```yaml
    - date: 2027-01-12
-     speaker: Имя Фамилия
+     speaker: First Last
      speaker_url: https://...
-     title: Название доклада
+     title: Title of the talk
      abstract: |
-       Текст аннотации, формулы в $...$.
+       Abstract text, formulas in $...$.
 
-       Пустая строка — новый абзац.
+       An empty line starts a new paragraph.
    ```
-3. **Commit changes**.
+3. Click **Commit changes**.
 
-Название пока неизвестно — просто не пишите `title`, на сайте будет «Title to be announced».
+If the title is not known yet, just leave out `title`; the site will show "Title to be announced".
+A talk at an unusual time: add `time: "16:00"` (Paris time).
 
-## После доклада
+## After the talk
 
-Доклад **сам** переезжает из «Upcoming» в «Past talks» в тот же вечер.
-Прошедшие годы сами уезжают в архив (`Archives`) 1 января.
+The talk moves from "Upcoming" to "Past talks" **by itself** the same evening.
+On January 1 the previous year's talks move to their own archive page automatically.
 
-**Слайды:** загрузите PDF в папку `slides/2027/` (Add file → Upload files).
-Имя файла должно начинаться с даты доклада: `20270112ivanov.pdf`.
-Тогда слайды сами прикрепятся к докладу этого дня — в `talks.yml` ничего писать не нужно.
-Если имя файла другое, укажите его явно: `slides: some_name.pdf`.
+**Slides:** upload the PDF to `slides/2027/` (Add file → Upload files).
+If the file name starts with the date of the talk, e.g. `20270112smith.pdf`, the slides
+are attached to that day's talk automatically; nothing needs to be added to `talks.yml`.
+For a file with a different name, give it explicitly in the talk entry: `slides: some_name.pdf`.
 
-**Видео:** добавьте в запись доклада строку `video: https://youtu.be/...`.
+**Video:** add the line `video: https://youtu.be/...` to the talk entry.
 
-**Не записывали:** `note: The talk was not recorded at the speaker's request.`
+**Not recorded:** `note: The talk was not recorded at the speaker's request.`
 
-## Если что-то пошло не так
+## If something goes wrong
 
-Вкладка **Actions**: зелёная галочка — сайт обновлён, красный крестик — ошибка.
-Нажмите на крестик: там будет написано, в какой записи проблема (чаще всего — сбитый отступ
-или двоеточие в названии; такое название возьмите в кавычки: `title: "A: B"`).
-Там же видны предупреждения вида «slides file not attached to any talk» — PDF, который
-не удалось сопоставить ни с одним докладом.
+Open the **Actions** tab. A green check mark means the site is updated; a red cross means an error.
+Click the red cross to see which entry caused it. Usually it is a broken indentation or a colon
+inside a title; put such a title in quotes: `title: "A: B"`.
+The same page shows warnings such as "slides file not attached to any talk": a PDF that
+could not be matched to any talk.
 
-Кнопка **Actions → Build and publish the site → Run workflow** пересобирает сайт вручную.
+**Actions → Build and publish the site → Run workflow** rebuilds the site manually.
 
-Примечание: GitHub отключает расписание автосборки, если в репозитории 60 дней не было
-изменений (например, летом). Тогда после перерыва достаточно любого коммита
-или кнопки Run workflow.
+Note: GitHub pauses scheduled rebuilds if the repository has had no commits for 60 days
+(for instance over the summer). After such a break, any commit or the Run workflow button
+turns them back on.

@@ -1,26 +1,26 @@
 # ============================================================
-#  ДОКЛАДЫ СЕМИНАРА
-#  Порядок записей не важен: сайт сам сортирует их по дате и
-#  сам переносит доклад из «Upcoming» в «Past» после его начала.
+#  SEMINAR TALKS
+#  The order of entries does not matter: the site sorts them by date
+#  and moves a talk from "Upcoming" to "Past" once it has started.
 #
-#  Поля (обязательны только date и speaker):
+#  Fields (only date and speaker are required):
 #    date:        2026-10-13
-#    time:        "16:00"        # если не указано — время из config.yml
-#    speaker:     Имя Фамилия
-#    speaker_url: https://...    # страница докладчика
-#    title:       Название
+#    time:        "16:00"        # if omitted, the time from config.yml is used
+#    speaker:     First Last
+#    speaker_url: https://...    # speaker's web page
+#    title:       Title
 #    video:       https://youtu.be/...
-#    slides:      20261013kosoy.pdf   # обычно НЕ НУЖНО: файл из папки slides/,
-#                                     # имя которого начинается с даты 20261013,
-#                                     # находится автоматически
+#    slides:      20261013kosoy.pdf   # usually NOT NEEDED: a file in slides/
+#                                     # whose name starts with the date 20261013
+#                                     # is found automatically
 #    note:        The talk was not recorded at the speaker's request.
 #    abstract: |
-#      Текст аннотации. Формулы в $...$ работают.
+#      Abstract text. Formulas in $...$ work.
 #
-#      Пустая строка = новый абзац.
+#      An empty line starts a new paragraph.
 # ============================================================
 
-# ---------- 2026: предстоящие ----------
+# ---------- 2026: upcoming ----------
 
 - date: 2026-10-13
   speaker: Vanessa Kosoy
@@ -67,7 +67,7 @@
 
     In the third part, I'll throw it open to an open-ended audience discussion of the issues, so if you have been following what's going on, please think in advance about questions and issues you might want to discuss.
 
-# ---------- 2026: прошедшие ----------
+# ---------- 2026: past ----------
 
 - date: 2026-09-29
   speaker: Anna Frid
