@@ -34,6 +34,7 @@
   speaker: Michael Coons
   speaker_url: https://mcoons-math.github.io/
   title: Correlations of the Thue-Morse Sequence
+  video: https://youtu.be/EVVmWsjRUi8
   abstract: |
     We revisit the pair correlations of the Thue–Morse sequence with focus on asymptotic results on various means. In the first part of the talk, we will show that all higher-order correlations of the Thue–Morse sequence with general real weights are effectively determined by a single value of the balanced $2$-point correlation. As a consequence, we get that all odd-order correlations of the balanced Thue–Morse sequence vanish, and that, for any even $n$, the $n$-point correlations of the balanced Thue–Morse sequence have mean value zero, as do their absolute values, raised to an arbitrary positive power. We will then show how the correlations of the Thue–Morse sequence with general real weights can be derived from the balanced $2$-point correlations. In the second/last part of the talk, we will focus on understanding the growth of the sum of the absolute values of the autocorrelations. This is joint work with Michael Baake, Jan Mazac, Ari Pincus-Kazmar and Adam Stout.
 
