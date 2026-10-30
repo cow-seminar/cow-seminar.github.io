@@ -41,6 +41,9 @@
 - date: 2026-11-10
   speaker: Jason Bell
   speaker_url: https://math.uwaterloo.ca/~jpbell/
+  title: Mahler series whose coefficient sequences are multiplicative
+  abstract: |
+    A recurring theme in number theory and automata theory is that sequences exhibiting two seemingly unrelated kinds of structure are often highly constrained. A classical example is Cobham's theorem, which states that a sequence that is automatic with respect to two multiplicatively independent bases must be eventually periodic. Another example comes from multiplicative automatic sequences: $k$-automatic sequences $a(n)$ satisfying $a(mn) = a(m)a(n)$ whenever $m$ and $n$ are relatively prime. Building on earlier work of Yazdani and Coons, Konieczny, Lemańczyk, and Müllner obtained a complete classification of such sequences. In joint work with Daniel Smertnig, we extend this result from automatic sequences to complex power series satisfying Mahler functional equations. We show that if the coefficients of a $k$-Mahler series are multiplicative, then they form a $k$-regular sequence, and we give an explicit classification of all such series. In particular, if $k$ is not a prime power, then we show that the series must be rational.
 
 - date: 2026-11-24
   speaker: Thierry de la Rue
