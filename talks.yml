@@ -50,6 +50,8 @@
   speaker: Thierry de la Rue
   speaker_url: https://delarue.perso.math.cnrs.fr/
   title: Frequency of patterns in smooth sequences over the alphabet $\{1,3\}$
+  video: https://youtu.be/Zna2H5fR7CY
+  note: Sorry, part of the video in the middle was lost due to technical problems.
   abstract: |
     The famous Oldenburger-Kolakoski sequence is an example of a smooth sequence over $\{1,2\}$, that is a sequence on which we can iterate the run-length encoding operation while sticking to the same alphabet. The very existence of the frequency of “$1$”s in this sequence has been the subject of an open question for decades.
 
