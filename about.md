@@ -1,4 +1,4 @@
-The seminar takes place biweekly on Tuesdays at 15:00 Paris time. In summer, it means 6:00 in California, 9:00 in New-York or Waterloo, 14:00 in London, 15:00 in Paris, 16:00 in Moscow and 22:00 in Tokyo. In winter, some of these numbers change. Please check in advance the time in your time zone.
+The seminar takes place biweekly at 15:00 Paris time: **on Tuesdays until the end of 2026, and on Wednesdays (at the same time) from January 2027.** In summer, it means 6:00 in California, 9:00 in New-York or Waterloo, 14:00 in London, 15:00 in Paris, 16:00 in Moscow and 22:00 in Tokyo. In winter, some of these numbers change. Please check in advance the time in your time zone.
 
 **Zoom:** <https://zoom.us/j/92245493528>. The password is distributed in announcements. If you want to receive them, or receive them and want to unsubscribe, please write to Anna Frid.
 
